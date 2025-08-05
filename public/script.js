@@ -7,4 +7,4 @@ let numPerDay = 50;
 
 let totalRequired = (numPerDay * 365) * (maxAge - age)
 
-document.write ("You will need " + totalRequired + " to last you until the ripe old age of X.")
+document.write ("You will need " + totalRequired + " cinnammon bread to last you until the ripe old age of " + maxAge)
