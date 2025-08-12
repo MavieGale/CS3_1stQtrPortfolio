@@ -4,11 +4,11 @@
 let maxAge = window.prompt ("Enter your max age: ", "100")
 let numPerDay = window.prompt ("Enter your number per day", "100") 
 let age = window.prompt ("Enter your age:", "14")
-let total
 
-   if (confirm(`s {maxAge} ${numPerDay}, ${age} really your age?`)){
-    console.log("Okay!");
-   }
-   else {
-    console.log("Run the code again")
-   }
+if (confirm(`Is ${maxAge}, ${numPerDay}, ${age} really your numbers?`)){
+    console.log("okay!);
+}
+
+else {
+    console.log("Run the code again!")
+}
