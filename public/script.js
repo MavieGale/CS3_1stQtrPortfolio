@@ -1,10 +1,12 @@
 // no script tag needed here 
 // use let for variables :))
 
-let age = 14;
-let maxAge = 100;
-let numPerDay = 50;
-
-let totalRequired = (numPerDay * 365) * (maxAge - age)
-
-document.write ("You will need " + totalRequired + " cinnammon bread to last you until the ripe old age of " + maxAge)
+let maxAge = window.prompt ("Enter your max age: ", "100")
+let numPerDay = window.prompt ("Enter your number per day", "100") 
+let age = window.prompt ("Enter your age:", "14")
+   if (confirm('Is ${age} really your age?')) {
+    console.log("Okay!");
+   }
+   else {
+    console.log("You're lying!");
+   }
