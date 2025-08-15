@@ -23,4 +23,4 @@ if (confirm(`Is ${maxAge}, ${numPerDay}, ${age} really your numbers?`)){
 
 else {
     console.log("Run the code again!")
-} */
+}
