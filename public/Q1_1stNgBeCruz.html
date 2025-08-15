@@ -7,16 +7,16 @@
         <button onclick="getData()"> Accept invitation</button>
         <script>
             function getData(){
-               let AGE = document.getElementById("age").value;
+                let AGE = age.value;
                let maxAGE = document.getElementById("maxAge").value;
                let perDay = document.getElementById("numPerDay").value;
-               let sure window.confirm("Sure of your numbers? ")
+               let sure = window.confirm("Sure of your numbers? ")
                if (sure) {
                 let totalRequired= (Number(perDay)*365) * (Number(maxAGE) - Number (AGE));
-                result.innerHTML = "Result: You will need " +totalRequired + "to last you until "
+                result.innerHTML = "Result: You will need " +totalRequired + "to last you until the ripe old age of " + maxAGE;
                }
                else{
-                    window.alert("please click to run again")
+                    window.alert("Please click to run again")
                }
             }
         </script>

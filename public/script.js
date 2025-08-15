@@ -1,15 +1,15 @@
-// no script tag needed here 
-// use let for variables :))
-
-let maxAge = window.prompt ("Enter your max age: ", "100")
-let numPerDay = window.prompt ("Enter your number per day", "100") 
-let age = window.prompt ("Enter your age:", "14")
-let sure window.confirm("Sure of your numbers? ")
-
-if (confirm(`Is ${maxAge}, ${numPerDay}, ${age} really your numbers?`)){
-    console.log("okay!");
-}
-
-else {
-    console.log("Run the code again!")
-}
+function getData() {
+    let perDay = document.getElementById("numPerDay").value;
+    let age = window.prompt("Enter your current age:", "14");
+    let maxAge = window.prompt("Enter your max age:", "100");
+  
+    let sure = window.confirm(`Are you sure about these numbers?\nAge: ${age}\nMax Age: ${maxAge}\nSnacks per day: ${perDay}`);
+  
+    if (sure) {
+      let totalRequired = Number(perDay) * 365 * (Number(maxAge) - Number(age));
+      document.getElementById("result").innerHTML = `Result: You will need ${totalRequired} snacks to last you until the ripe old age of ${maxAge}.`;
+    } else {
+      window.alert("Please click the button again and re-enter your values.");
+    }
+  }
+  
