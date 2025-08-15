@@ -1,15 +1,23 @@
 <html>
 <body> 
- 
-        <p> Result:
-        </p>
+  <label>Enter number of snacks</label>
+  <input id="numPerDay" />
 
+        <p id="result" > Result :</p>
         <button onclick="getData()"> Accept invitation</button>
         <script>
             function getData(){
                let AGE = document.getElementById("age").value;
                let maxAGE = document.getElementById("maxAge").value;
                let perDay = document.getElementById("numPerDay").value;
+               let sure window.confirm("Sure of your numbers? ")
+               if (sure) {
+                let totalRequired= (Number(perDay)*365) * (Number(maxAGE) - Number (AGE));
+                result.innerHTML = "Result: You will need " +totalRequired + "to last you until "
+               }
+               else{
+                    window.alert("please click to run again")
+               }
             }
         </script>
 </body>
